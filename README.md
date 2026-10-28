@@ -47,7 +47,7 @@ The Web Search control is labeled Google Search and the backend attempts Google 
 
 ## Static assets and interface
 - Public-facing icons, the web manifest, and the service worker live in `public/` so Vite copies them into production output.
-- FreeAI ships four favicon SVG sizes plus six size-specific Apple home-screen SVG icon variants. The original 180px PNG touch icon is also copied to the production root as a compatibility fallback.
+- FreeAI ships four favicon SVG sizes plus six Apple touch-icon PNG paths and the original 180px PNG fallback. The build currently derives the six named PNG paths from that original icon; the output paths are present, but the images are not independently resampled to each target pixel size.
 - The app opens on the sign-in card first; users can choose **Continue as guest** beneath it. Accounts/cloud sync remain optional and require Supabase environment variables plus the SQL schema.
 - Response copy controls use an accessible copy icon; Google Search uses a rounded, stateful control; Markdown tables and code blocks have responsive styling.
 
