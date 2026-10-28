@@ -43,3 +43,13 @@ The chat endpoint attempts Bing RSS first, DuckDuckGo HTML second, and Wikipedia
 
 ## Google Search and UI rendering
 The Web Search control is labeled Google Search and the backend attempts Google Search result retrieval first. Because Google does not provide a general free public web-search API, automated result retrieval can be blocked; FreeAI then tries free fallback sources and always provides a direct Google Search link if automatic retrieval fails. Markdown tables are rendered as horizontally scrollable styled tables, and inline emphasis inside cells is supported. The shared Emerald/Silver sparkle mark is used for the site favicon, header brand, welcome screen, assistant avatar, PWA SVG icons, and iOS/iPadOS Apple touch icon.
+
+
+## Static assets and interface
+- Public-facing icons, the web manifest, and the service worker live in `public/` so Vite copies them into production output.
+- FreeAI ships four favicon SVG sizes plus six size-specific Apple home-screen SVG icon variants. The original 180px PNG touch icon is also copied to the production root as a compatibility fallback.
+- The app opens on the sign-in card first; users can choose **Continue as guest** beneath it. Accounts/cloud sync remain optional and require Supabase environment variables plus the SQL schema.
+- Response copy controls use an accessible copy icon; Google Search uses a rounded, stateful control; Markdown tables and code blocks have responsive styling.
+
+## Quality expectations
+The system prompt and output budget have been strengthened, but answer quality still depends on whichever free model OpenRouter routes for `openrouter/free`. There is no prompt-only guarantee of GPT-6-level reasoning or consistent image/tool support. Verify production behavior after Vercel finishes building.
