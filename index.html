@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#07110e" />
+    <meta name="description" content="FreeAI — a free, useful AI assistant built around privacy, powerful models, and practical tools." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>FreeAI — Your AI, without the nonsense</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar" aria-label="Chat history">
+        <div class="brand-row">
+          <a class="brand" href="/" aria-label="FreeAI home"><span class="brand-mark">F</span><span>FreeAI</span></a>
+          <button class="icon-button mobile-close" id="closeSidebar" aria-label="Close sidebar">×</button>
+        </div>
+        <button class="new-chat" id="newChat"><span>＋</span> New chat</button>
+        <div class="sidebar-label">YOUR CHATS</div>
+        <div class="history-list" id="historyList"></div>
+        <div class="sidebar-bottom">
+          <div class="privacy-note"><span class="status-dot"></span><span>Guest mode · Stored on this device</span></div>
+          <button class="side-link" id="clearHistory">Clear chat history</button>
+        </div>
+      </aside>
+      <div class="sidebar-scrim" id="sidebarScrim"></div>
+      <main class="main-panel">
+        <header class="topbar">
+          <button class="icon-button menu-button" id="openSidebar" aria-label="Open sidebar">☰</button>
+          <div class="model-pill"><span class="status-dot"></span><span>Free model</span><span class="pill-divider"></span><span id="modelLabel">Auto-select</span></div>
+          <a class="top-link" href="https://github.com/avada-kedavra62442/FreeAI" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </header>
+        <section class="conversation" id="conversation" aria-live="polite">
+          <div class="welcome" id="welcome">
+            <div class="welcome-orb"><span>F</span></div>
+            <p class="eyebrow">YOUR AI. YOUR IDEAS.</p>
+            <h1>What can we <span>figure out</span> together?</h1>
+            <p class="welcome-subtitle">Ask questions, explore ideas, write code, or break a big task into manageable steps.</p>
+            <div class="suggestion-grid">
+              <button class="suggestion" data-prompt="Help me plan and complete a complex project, step by step."><span class="suggestion-icon">✳</span><span><b>Plan a project</b><small>Turn an idea into clear next steps</small></span><span class="suggestion-arrow">↗</span></button>
+              <button class="suggestion" data-prompt="Explain a difficult topic simply, then give me a deeper explanation and examples."><span class="suggestion-icon">◇</span><span><b>Learn something</b><small>Clear explanations with examples</small></span><span class="suggestion-arrow">↗</span></button>
+              <button class="suggestion" data-prompt="Help me debug a code problem. Ask me for the relevant code and error if needed."><span class="suggestion-icon">⌘</span><span><b>Build with code</b><small>Debug, design, and improve</small></span><span class="suggestion-arrow">↗</span></button>
+              <button class="suggestion" data-prompt="Help me brainstorm unusual but practical ideas for a useful free web app."><span class="suggestion-icon">✧</span><span><b>Explore an idea</b><small>Brainstorm something useful</small></span><span class="suggestion-arrow">↗</span></button>
+            </div>
+          </div>
+          <div class="messages" id="messages"></div>
+        </section>
+        <div class="composer-wrap">
+          <form class="composer" id="chatForm">
+            <textarea id="promptInput" rows="1" maxlength="12000" placeholder="Message FreeAI…" aria-label="Message FreeAI"></textarea>
+            <div class="composer-footer">
+              <div class="composer-hint"><span class="sparkle">✧</span> Free models · No subscription</div>
+              <div class="composer-actions"><span class="key-hint">Enter ↵</span><button class="send-button" id="sendButton" type="submit" aria-label="Send message"><span>↑</span></button></div>
+            </div>
+          </form>
+          <p class="disclaimer">FreeAI can make mistakes. Verify important information. Free-model availability and limits may change.</p>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
