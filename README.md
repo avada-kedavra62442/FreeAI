@@ -32,3 +32,10 @@ The client extracts text from common text/code formats and PDFs using PDF.js; im
 - Text/code and PDF text extraction; image input for vision-capable models.
 - Basic request size validation, origin allow-list, timeout, and readable errors.
 - This is not full ChatGPT/Gemini/Claude parity: no arbitrary code execution, general-purpose computer use, autonomous external actions, or guaranteed free image/tool-capable model. Free provider rate limits apply.
+
+
+## Install as an app (PWA)
+FreeAI includes a web app manifest, service worker, SVG favicon sizes, scalable install icons, and a 180px Apple touch icon. On Android, Chrome/Edge, Windows, and Linux, use the browser's Install app option or the Install app button when offered. On iPhone/iPad, open the site in Safari, tap Share, then choose Add to Home Screen. iOS/iPadOS use the manual Share-sheet flow rather than the same install prompt as Chromium browsers. The service worker caches the app shell only; API calls are never cached. First visit and AI features require internet access.
+
+## Web search troubleshooting
+The chat endpoint attempts Bing RSS first, DuckDuckGo HTML second, and Wikipedia OpenSearch as a final fallback. The Web Search toggle triggers server-side search directly rather than relying only on a model tool call. Free upstream providers can still rate-limit or change their output. The assistant instructions, response budget, Markdown source links, and fallback for free models without tool-call support have also been improved.
