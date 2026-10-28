@@ -72,7 +72,7 @@ export default async function handler(req, res) {
   const model = process.env.FREEAI_MODEL || DEFAULT_MODEL;
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 55000);
-  req.on?.("close", () => controller.abort());
+  res.on("close", () => { if (!res.writableEnded) controller.abort(); });
 
   try {
     const upstream = await fetch("https://openrouter.ai/api/v1/chat/completions", {
