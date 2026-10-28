@@ -53,3 +53,7 @@ The Web Search control is labeled Google Search and the backend attempts Google 
 
 ## Quality expectations
 The system prompt and output budget have been strengthened, but answer quality still depends on whichever free model OpenRouter routes for `openrouter/free`. There is no prompt-only guarantee of GPT-6-level reasoning or consistent image/tool support. Verify production behavior after Vercel finishes building.
+
+
+## Profile and settings
+The sidebar profile button opens a responsive settings workspace with General, Appearance, Account, Archived Chats, and Data Controls. Theme mode, accent/background/foreground colors, font sizes, contrast, and reduced motion are stored locally. Chat export downloads a JSON file; archiving is local and reversible. Chat deletion attempts to remove synced rows for the signed-in user as well as local chat history. Account deletion is intentionally not faked: it needs a secure server-side endpoint. Language options beyond English are marked coming soon because the interface has not yet been translated.
