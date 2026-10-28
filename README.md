@@ -39,3 +39,7 @@ FreeAI includes a web app manifest, service worker, SVG favicon sizes, scalable 
 
 ## Web search troubleshooting
 The chat endpoint attempts Bing RSS first, DuckDuckGo HTML second, and Wikipedia OpenSearch as a final fallback. The Web Search toggle triggers server-side search directly rather than relying only on a model tool call. Free upstream providers can still rate-limit or change their output. The assistant instructions, response budget, Markdown source links, and fallback for free models without tool-call support have also been improved.
+
+
+## Google Search and UI rendering
+The Web Search control is labeled Google Search and the backend attempts Google Search result retrieval first. Because Google does not provide a general free public web-search API, automated result retrieval can be blocked; FreeAI then tries free fallback sources and always provides a direct Google Search link if automatic retrieval fails. Markdown tables are rendered as horizontally scrollable styled tables, and inline emphasis inside cells is supported. The shared Emerald/Silver sparkle mark is used for the site favicon, header brand, welcome screen, assistant avatar, PWA SVG icons, and iOS/iPadOS Apple touch icon.
