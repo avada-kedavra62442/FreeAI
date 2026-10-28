@@ -10,6 +10,9 @@ export default defineConfig({
       const outputDir = resolve(process.cwd(), "dist");
       mkdirSync(outputDir, { recursive: true });
       copyFileSync(source, resolve(outputDir, "apple-touch-icon.png"));
+      for (const size of [120, 152, 167, 180, 192, 512]) {
+        copyFileSync(source, resolve(outputDir, `apple-touch-icon-${size}.png`));
+      }
     }
   }]
 });
