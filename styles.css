@@ -177,14 +177,6 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
 body.reduce-motion *,body.reduce-motion *:before,body.reduce-motion *:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 html{font-size:var(--ui-font-size,14px)}
 .message-body code,.code-block pre{font-size:var(--code-font-size,12px)}
-body.theme-light{color-scheme:light;--panel:#f4f8f5;--panel2:#e7f0e9;--line:rgba(28,67,45,.15);--line2:rgba(28,67,45,.24);--muted:#4d6b59;--muted2:#718677;--silver:#294a36}
-body.theme-light .sidebar,body.theme-light .settings-window{background:linear-gradient(145deg,#f5faf6,#eaf3ed);color:#14231b}
-body.theme-light .settings-nav{background:#e5eee8}
-body.theme-light .settings-section h3,body.theme-light .setting-copy strong,body.theme-light .setting-toggle strong{color:#203b2b}
-body.theme-light .setting-value{color:#3d5947}
-body.theme-light .settings-header h2{color:#14231b}
-body.theme-light .setting-control select{background:#f7fbf8;color:#14231b}
-body.theme-light .settings-tab.active{color:#155637;background:#d8f0e2}
 body[data-visual-style="minimal"] .settings-window{border-radius:14px;box-shadow:0 25px 90px #0007}
 body[data-visual-style="high-contrast"]{--line:rgba(189,230,211,.3);--line2:rgba(189,230,211,.48)}
 @media(max-width:720px){.sidebar{width:min(290px,86vw);flex-basis:min(290px,86vw)}.sidebar.collapsed{margin-left:0}.settings-window{grid-template-columns:1fr;width:100%;height:calc(100dvh - 20px);min-height:0;border-radius:19px}.settings-nav{padding:13px;gap:4px;border-right:0;border-bottom:1px solid var(--line);display:flex;flex-direction:row;flex-wrap:wrap}.settings-brand{width:100%;padding:0 5px 5px}.settings-nav-label{display:none}.settings-tab{width:auto;flex:1;justify-content:center;padding:9px 7px;font-size:10px}.settings-close-mobile{display:none}.settings-header{padding:18px 19px 14px}.settings-header h2{font-size:21px}.settings-content{padding:18px 19px}.settings-footer{padding:11px 19px}.settings-footer span{max-width:70%}.setting-row{gap:10px}.setting-control{min-width:90px}.setting-control select{max-width:150px}.setting-actions{gap:7px}.settings-danger,.settings-secondary,.settings-primary{padding:9px 10px;font-size:9px}}
@@ -192,12 +184,6 @@ body[data-visual-style="high-contrast"]{--line:rgba(189,230,211,.3);--line2:rgba
 
 @media(min-width:721px){.menu-button{display:none}.sidebar.collapsed+.sidebar-scrim+.main-panel .menu-button{display:grid}}
 @media(max-width:720px){.menu-button{display:grid}}
-body.theme-light{background:radial-gradient(ellipse at 72% -10%,rgba(75,180,125,.12),transparent 42%),#f2f7f4}
-body.theme-light .message-body,body.theme-light .welcome,body.theme-light .topbar{color:#172c20}
-body.theme-light .composer{background:#f7fbf8;border-color:#b6cdbd}
-body.theme-light .composer textarea{color:#172c20}
-body.theme-light .message-author{color:#45624f}
-body.theme-light .settings-note{color:#5b7664}
 
 
 /* FreeAI Universal Liquid Glass Interface — house-inspired preset palettes */
@@ -239,43 +225,44 @@ body[data-theme="yellow"]{--theme-glow:#ffd15e}
 body[data-theme="yellow"] .status-dot{background:#ffd15e;box-shadow:0 0 10px #ffd15e88}
 body[data-theme="yellow"] .settings-primary{background:linear-gradient(135deg,#fff1b5,#e8b638 65%,#8b6417)}
 body[data-theme="green"]{--theme-glow:#53e2a6}
-body.theme-light{background:radial-gradient(ellipse at 75% -10%,color-mix(in srgb,var(--theme-glow) 21%,transparent),transparent 48%),radial-gradient(ellipse at 0% 100%,rgba(255,255,255,.85),transparent 45%),linear-gradient(145deg,#f8fbff,#eaf3f7 58%,#f5f9ff);--panel:rgba(255,255,255,.68);--panel2:rgba(255,255,255,.52);--line:rgba(255,255,255,.58);--line2:rgba(60,85,110,.18);--muted:#53687b;--muted2:#72869a;--silver:#263d52}
-body.theme-light .sidebar{background:linear-gradient(145deg,rgba(255,255,255,.78),rgba(229,241,248,.68));border-right-color:rgba(255,255,255,.85);box-shadow:8px 0 38px rgba(48,80,110,.07)}
-body.theme-light .main-panel{background:linear-gradient(135deg,rgba(255,255,255,.26),rgba(235,245,251,.13))}
-body.theme-light .topbar{border-bottom-color:rgba(255,255,255,.7);background:linear-gradient(180deg,rgba(255,255,255,.5),rgba(255,255,255,.14))}
-body.theme-light .model-pill,body.theme-light .icon-button{background:rgba(255,255,255,.48);border-color:rgba(255,255,255,.72);color:#294156;box-shadow:0 4px 18px rgba(42,75,100,.06),inset 0 1px 0 white}
-body.theme-light .welcome h1 span{background:linear-gradient(105deg,var(--theme-ink),var(--emerald) 65%,#fff);-webkit-background-clip:text;background-clip:text}
-body.theme-light .welcome-subtitle,body.theme-light .message-author{color:#536b7b}
-body.theme-light .message-body{color:#263d4e}
-body.theme-light .message-body blockquote{color:#526f81}
-body.theme-light .message-body code{background:rgba(255,255,255,.65);border-color:rgba(60,85,110,.15);color:var(--theme-ink)}
-body.theme-light .code-block{background:rgba(15,28,39,.94);border-color:rgba(255,255,255,.28);box-shadow:0 12px 32px rgba(20,50,75,.12)}
-body.theme-light .composer{background:linear-gradient(145deg,rgba(255,255,255,.78),rgba(237,247,252,.58));border-color:rgba(255,255,255,.92);box-shadow:0 16px 48px rgba(40,70,95,.12),inset 0 1px 0 white}
-body.theme-light .composer textarea{color:#1b3447}
-body.theme-light .composer textarea::placeholder{color:#748b9c}
-body.theme-light .suggestion{background:linear-gradient(135deg,rgba(255,255,255,.74),rgba(255,255,255,.32));border-color:rgba(255,255,255,.82);box-shadow:0 10px 32px rgba(40,70,95,.07),inset 0 1px 0 white;color:#213c50}
-body.theme-light .suggestion b{color:#203b50}
-body.theme-light .suggestion small{color:#617b8c}
-body.theme-light .settings-window{background:linear-gradient(145deg,rgba(250,254,255,.92),rgba(226,239,247,.9));border-color:rgba(255,255,255,.95);box-shadow:0 25px 100px rgba(33,67,93,.22),inset 0 1px 0 white}
-body.theme-light .settings-nav{background:linear-gradient(145deg,rgba(255,255,255,.72),rgba(220,235,245,.62));border-right-color:rgba(255,255,255,.7)}
-body.theme-light .settings-section h3,body.theme-light .setting-copy strong,body.theme-light .setting-toggle strong,body.theme-light .settings-header h2{color:#1d374b}
-body.theme-light .setting-copy small,body.theme-light .setting-toggle small,body.theme-light .settings-section>p,body.theme-light .settings-note{color:#617889}
-body.theme-light .setting-control select,body.theme-light .setting-control input:not([type=color]):not([type=range]){background-color:rgba(255,255,255,.66);color:#203b50;border-color:rgba(70,100,125,.2)}
-body.theme-light .setting-control select option{background:#f4f9fc;color:#203b50}
-body.theme-light .settings-tab{color:#5d7385}
-body.theme-light .settings-tab.active{color:var(--theme-ink);background:linear-gradient(120deg,color-mix(in srgb,var(--theme-glow) 22%,white),rgba(255,255,255,.72));border-color:rgba(255,255,255,.9);box-shadow:0 5px 18px color-mix(in srgb,var(--theme-glow) 13%,transparent)}
-body.theme-light .setting-value{color:#385469}
-body.theme-light .status-chip{color:var(--theme-ink);background:color-mix(in srgb,var(--theme-glow) 16%,white);border-color:color-mix(in srgb,var(--theme-glow) 24%,white)}
-body.theme-light .settings-secondary,body.theme-light .settings-footer button{color:#284256;border-color:rgba(70,100,125,.2);background:rgba(255,255,255,.56)}
-body.theme-light .settings-danger{color:#a52d3c;background:rgba(255,235,238,.6)}
-body.theme-light .auth-modal{background:linear-gradient(145deg,rgba(250,254,255,.96),rgba(226,239,247,.94));color:#1d374b;border-color:white}
-body.theme-light .auth-modal label{color:#314f64}
-body.theme-light .auth-modal input{background:rgba(255,255,255,.76);color:#1d374b;border-color:rgba(70,100,125,.2)}
-body.theme-light .disclaimer{color:#71889a}
-body.theme-light .history-item{color:#486477}
-body.theme-light .history-item:hover,body.theme-light .history-item.active{color:#1d374b;background:rgba(255,255,255,.56);border-color:rgba(255,255,255,.88)}
-body.theme-light .side-link{color:#5b7485}
-body.theme-light .privacy-note{color:#60798a}
-body.theme-light .welcome-orb span{color:var(--emerald)}
-body.theme-light .send-button{color:#122c3c}
-@media(max-width:720px){body.theme-light .sidebar{box-shadow:20px 0 60px rgba(40,70,95,.14)}}
+
+
+/* Theme tokens: vivid house palettes + a dark-only, custom Liquid Glass control system */
+:root{color-scheme:dark;--theme-glow:#00ff9d;--theme-ink:#9affd6}
+body{color-scheme:dark;background:radial-gradient(ellipse at 72% -10%,color-mix(in srgb,var(--theme-glow) 31%,transparent),transparent 45%),radial-gradient(ellipse at 6% 100%,color-mix(in srgb,var(--theme-glow) 16%,transparent),transparent 43%),linear-gradient(145deg,#05070c,var(--bg) 55%,#05070c)}
+body[data-theme="red"]{--theme-glow:#ff174f;--theme-ink:#ffb6c5}
+body[data-theme="green"]{--theme-glow:#00ff9d;--theme-ink:#9affd6}
+body[data-theme="blue"]{--theme-glow:#24a8ff;--theme-ink:#a5dcff}
+body[data-theme="yellow"]{--theme-glow:#ffdf00;--theme-ink:#ffec86}
+.sidebar{background:linear-gradient(145deg,color-mix(in srgb,var(--theme-glow) 15%,rgba(18,24,35,.94)),rgba(4,8,14,.96));border-right-color:color-mix(in srgb,var(--theme-glow) 24%,rgba(255,255,255,.2));backdrop-filter:blur(34px) saturate(190%);-webkit-backdrop-filter:blur(34px) saturate(190%)}
+.topbar{background:linear-gradient(180deg,rgba(255,255,255,.065),rgba(255,255,255,.008));border-bottom-color:color-mix(in srgb,var(--theme-glow) 22%,rgba(255,255,255,.1));backdrop-filter:blur(28px) saturate(190%);-webkit-backdrop-filter:blur(28px) saturate(190%)}
+.new-chat,.suggestion,.composer,.model-pill,.icon-button,.settings-window,.settings-nav,.auth-modal{backdrop-filter:blur(32px) saturate(190%);-webkit-backdrop-filter:blur(32px) saturate(190%)}
+.new-chat{background:linear-gradient(135deg,color-mix(in srgb,var(--theme-glow) 25%,rgba(255,255,255,.08)),rgba(255,255,255,.025));border-color:color-mix(in srgb,var(--theme-glow) 45%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 9px 30px rgba(0,0,0,.13)}
+.new-chat span,.new-chat svg,.top-link:hover,.eyebrow,.sparkle,.composer-hint .sparkle,.suggestion-icon,.suggestion-arrow,.copy-code:hover,.copy-message:hover,.message-body a,.settings-header .eyebrow,.empty-icon,.guest-mode-button span,.side-link:hover{color:var(--emerald)!important}
+.suggestion{background:linear-gradient(140deg,color-mix(in srgb,var(--theme-glow) 17%,rgba(255,255,255,.085)),rgba(255,255,255,.018));border-color:color-mix(in srgb,var(--theme-glow) 33%,rgba(255,255,255,.14));box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 12px 38px rgba(0,0,0,.12)}
+.suggestion:hover{border-color:color-mix(in srgb,var(--theme-glow) 85%,white);background:linear-gradient(140deg,color-mix(in srgb,var(--theme-glow) 25%,rgba(255,255,255,.12)),rgba(255,255,255,.035));box-shadow:0 0 28px color-mix(in srgb,var(--theme-glow) 17%,transparent),inset 0 1px 0 rgba(255,255,255,.23)}
+.welcome-orb{background:linear-gradient(145deg,color-mix(in srgb,var(--theme-glow) 38%,rgba(255,255,255,.32)),color-mix(in srgb,var(--theme-glow) 13%,rgba(255,255,255,.035)));border-color:color-mix(in srgb,var(--theme-glow) 76%,white);box-shadow:0 0 78px color-mix(in srgb,var(--theme-glow) 27%,transparent),inset 0 1px 0 rgba(255,255,255,.48)}
+.welcome h1 span{background:linear-gradient(105deg,#fff 2%,var(--theme-glow) 63%,#fff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.composer{background:linear-gradient(145deg,color-mix(in srgb,var(--theme-glow) 19%,rgba(255,255,255,.095)),rgba(7,11,19,.91));border-color:color-mix(in srgb,var(--theme-glow) 47%,rgba(255,255,255,.28));box-shadow:0 20px 70px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.22)}
+.composer:focus-within{border-color:color-mix(in srgb,var(--theme-glow) 90%,white);box-shadow:0 20px 70px rgba(0,0,0,.24),0 0 0 3px color-mix(in srgb,var(--theme-glow) 25%,transparent),inset 0 1px 0 rgba(255,255,255,.25)}
+.send-button,.auth-primary,.settings-primary,.settings-footer button{background:linear-gradient(145deg,#fff,color-mix(in srgb,var(--theme-glow) 84%,white) 42%,var(--emerald))!important;border-color:rgba(255,255,255,.8)!important;color:#071018!important;box-shadow:0 6px 28px color-mix(in srgb,var(--theme-glow) 31%,transparent),inset 0 1px 0 #fff}
+.status-dot{background:var(--theme-glow);box-shadow:0 0 13px color-mix(in srgb,var(--theme-glow) 75%,transparent)}
+.settings-window{background:linear-gradient(145deg,rgba(21,29,42,.96),rgba(5,9,17,.97));border:1px solid color-mix(in srgb,var(--theme-glow) 31%,rgba(255,255,255,.22));box-shadow:0 30px 110px rgba(0,0,0,.58),inset 0 1px 0 rgba(255,255,255,.2)}
+.settings-nav{background:linear-gradient(150deg,color-mix(in srgb,var(--theme-glow) 13%,rgba(255,255,255,.065)),rgba(255,255,255,.015));border-right-color:rgba(255,255,255,.12)}
+.settings-section h3,.settings-header h2{color:#fff}
+.settings-tab.active{border-color:color-mix(in srgb,var(--theme-glow) 74%,white);background:linear-gradient(120deg,color-mix(in srgb,var(--theme-glow) 31%,rgba(255,255,255,.13)),rgba(255,255,255,.04));color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.23),0 4px 26px color-mix(in srgb,var(--theme-glow) 14%,transparent)}
+/* Fully custom theme dropdown: no browser-native select popup */
+.glass-select{position:relative;width:min(250px,100%);z-index:4}
+.glass-select-trigger{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;min-height:42px;padding:9px 12px;border:1px solid color-mix(in srgb,var(--theme-glow) 48%,rgba(255,255,255,.22));border-radius:13px;background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.035));color:#f5f9ff;font-size:12px;text-align:left;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 8px 24px rgba(0,0,0,.12);cursor:pointer}
+.glass-select-trigger svg{width:16px;height:16px;fill:none;stroke:var(--theme-glow);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .18s}
+.glass-select.open .glass-select-trigger svg{transform:rotate(180deg)}
+.glass-select-menu{position:absolute;top:calc(100% + 8px);right:0;left:0;display:grid;gap:4px;padding:7px;border:1px solid color-mix(in srgb,var(--theme-glow) 43%,rgba(255,255,255,.22));border-radius:16px;background:linear-gradient(145deg,rgba(28,38,53,.98),rgba(7,12,21,.99));box-shadow:0 20px 60px rgba(0,0,0,.58),inset 0 1px 0 rgba(255,255,255,.15);backdrop-filter:blur(36px) saturate(200%);-webkit-backdrop-filter:blur(36px) saturate(200%);opacity:0;visibility:hidden;transform:translateY(-5px) scale(.985);transform-origin:top center;transition:opacity .15s,transform .15s,visibility .15s;z-index:100}
+.glass-select.open .glass-select-menu{opacity:1;visibility:visible;transform:translateY(0) scale(1)}
+.glass-select-option{display:flex;align-items:center;gap:10px;width:100%;padding:10px;border:1px solid transparent;border-radius:10px;background:transparent;color:#eaf2fb;font-size:12px;text-align:left}
+.glass-select-option:hover,.glass-select-option.selected{border-color:color-mix(in srgb,var(--theme-glow) 45%,transparent);background:linear-gradient(110deg,color-mix(in srgb,var(--theme-glow) 23%,rgba(255,255,255,.05)),rgba(255,255,255,.025))}
+.theme-swatch{width:13px;height:13px;border-radius:50%;border:1px solid rgba(255,255,255,.7);box-shadow:0 0 14px currentColor;flex:none}
+.swatch-red{background:#ff2855;color:#ff2855}.swatch-green{background:#00f5a0;color:#00f5a0}.swatch-blue{background:#20a4ff;color:#20a4ff}.swatch-yellow{background:#ffd400;color:#ffd400}
+.dropdown-check{margin-left:auto;color:var(--theme-glow)}
+.glass-select-trigger:focus-visible,.glass-select-option:focus-visible{outline:2px solid var(--theme-glow);outline-offset:3px}
+.setting-control input[type=range]{accent-color:var(--theme-glow)}
+@media(max-width:720px){.glass-select{width:min(190px,100%)}.glass-select-menu{right:0;left:auto;width:100%;min-width:185px}}
