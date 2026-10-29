@@ -228,10 +228,10 @@ body[data-theme="green"]{--theme-glow:var(--emerald)}
 
 
 /* Theme tokens: vivid house palettes + a dark-only, custom Liquid Glass control system */
-:root{color-scheme:dark;--theme-glow:var(--theme-glow);--theme-ink:#9affd6}
+:root{color-scheme:dark;--theme-glow:var(--emerald);--theme-ink:#9affd6}
 body{color-scheme:dark;background:radial-gradient(ellipse at 72% -10%,color-mix(in srgb,var(--theme-glow) 31%,transparent),transparent 45%),radial-gradient(ellipse at 6% 100%,color-mix(in srgb,var(--theme-glow) 16%,transparent),transparent 43%),linear-gradient(145deg,#05070c,var(--bg) 55%,#05070c)}
 body[data-theme="red"]{--theme-glow:#ff174f;--theme-ink:#ffb6c5}
-body[data-theme="green"]{--theme-glow:var(--theme-glow);--theme-ink:#9affd6}
+body[data-theme="green"]{--theme-glow:var(--emerald);--theme-ink:#9affd6}
 body[data-theme="blue"]{--theme-glow:#24a8ff;--theme-ink:#a5dcff}
 body[data-theme="yellow"]{--theme-glow:#ffdf00;--theme-ink:#ffec86}
 .sidebar{background:linear-gradient(145deg,color-mix(in srgb,var(--theme-glow) 15%,rgba(18,24,35,.94)),rgba(4,8,14,.96));border-right-color:color-mix(in srgb,var(--theme-glow) 24%,rgba(255,255,255,.2));backdrop-filter:blur(34px) saturate(190%);-webkit-backdrop-filter:blur(34px) saturate(190%)}
