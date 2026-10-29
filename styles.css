@@ -288,5 +288,11 @@ body[data-theme="yellow"]{--theme-glow:#ffdf00;--theme-ink:#ffec86}
 
 .auth-provider-button{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:43px;margin-top:10px;padding:10px 13px;border:1px solid var(--line2);border-radius:12px;background:rgba(255,255,255,.045);color:var(--text);font:600 12px/1.2 system-ui,sans-serif;cursor:pointer;transition:background .15s,border-color .15s,transform .15s}
 .auth-provider-button:hover{background:rgba(255,255,255,.09);border-color:var(--theme-glow);transform:translateY(-1px)}
-.google-g{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#fff;color:#4285f4;font:800 14px Arial,sans-serif}
-.discord-mark{display:grid;place-items:center;width:20px;height:20px;border-radius:6px;background:#5865f2;color:#fff;font:900 17px/1 system-ui,sans-serif}
+.auth-provider-button{position:relative;justify-content:center;min-height:46px;padding:11px 44px;font-size:13px;font-weight:600;letter-spacing:.01em}
+.auth-provider-button .provider-logo{position:absolute;left:15px;top:50%;display:block;width:20px;height:20px;flex:none;transform:translateY(-50%)}
+.auth-provider-button .google-logo{width:19px;height:19px}
+.auth-provider-button .discord-logo{width:22px;height:22px;color:#5865F2}
+.auth-google-button{background:rgba(255,255,255,.96);border-color:rgba(255,255,255,.8);color:#202124}
+.auth-google-button:hover{background:#fff;border-color:#d2d5d9}
+.auth-discord-button{background:rgba(88,101,242,.09);border-color:rgba(88,101,242,.36)}
+.auth-discord-button:hover{background:rgba(88,101,242,.16);border-color:#5865F2}
