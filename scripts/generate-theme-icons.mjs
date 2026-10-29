@@ -13,7 +13,7 @@ async function render(theme, sourceName, outputName, size) {
   const source = await readFile(resolve(directory, sourceName));
   const output = resolve(directory, outputName);
   await mkdir(dirname(output), { recursive: true });
-  await sharp(source, { density: 384 })
+  await sharp(source)
     .resize(size, size, { fit: "contain", background: { r: 0, g: 0, b: 0, alpha: 0 } })
     .png({ compressionLevel: 9, adaptiveFiltering: true })
     .toFile(output);
