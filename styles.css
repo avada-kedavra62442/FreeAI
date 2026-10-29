@@ -266,3 +266,21 @@ body[data-theme="yellow"]{--theme-glow:#ffdf00;--theme-ink:#ffec86}
 .glass-select-trigger:focus-visible,.glass-select-option:focus-visible{outline:2px solid var(--theme-glow);outline-offset:3px}
 .setting-control input[type=range]{accent-color:var(--theme-glow)}
 @media(max-width:720px){.glass-select{width:min(190px,100%)}.glass-select-menu{right:0;left:auto;width:100%;min-width:185px}}
+
+/* Sweep remaining legacy emerald-only accents into the selected vivid theme */
+.history-item.active,.history-item:hover{border-color:color-mix(in srgb,var(--theme-glow) 34%,transparent)}
+.message-body .table-wrap{border-color:color-mix(in srgb,var(--theme-glow) 30%,rgba(255,255,255,.13));background:linear-gradient(135deg,color-mix(in srgb,var(--theme-glow) 10%,rgba(15,35,25,.72)),rgba(8,13,22,.86))}
+.message-body th{background:linear-gradient(120deg,color-mix(in srgb,var(--theme-glow) 38%,rgba(18,28,42,.65)),color-mix(in srgb,var(--theme-glow) 18%,rgba(18,28,42,.8)));color:#fff;border-color:color-mix(in srgb,var(--theme-glow) 22%,rgba(255,255,255,.12))}
+.message-body td,.message-body th{border-color:color-mix(in srgb,var(--theme-glow) 17%,rgba(255,255,255,.1))}
+.message-body tbody tr:hover{background:color-mix(in srgb,var(--theme-glow) 10%,transparent)}
+.message-body blockquote{border-left-color:var(--theme-glow);background:color-mix(in srgb,var(--theme-glow) 9%,transparent);color:#d7e8f4}
+.message-body code{background:color-mix(in srgb,var(--theme-glow) 13%,#0a111b);border-color:color-mix(in srgb,var(--theme-glow) 27%,rgba(255,255,255,.1));color:var(--theme-ink)}
+.message-body a{color:var(--theme-glow)!important;text-decoration-color:color-mix(in srgb,var(--theme-glow) 60%,transparent)}
+.message-avatar.assistant{background:linear-gradient(145deg,color-mix(in srgb,var(--theme-glow) 40%,#18202c),#08101b);border-color:color-mix(in srgb,var(--theme-glow) 55%,rgba(255,255,255,.15));box-shadow:0 0 20px color-mix(in srgb,var(--theme-glow) 15%,transparent)}
+.suggestion-icon{background:linear-gradient(145deg,color-mix(in srgb,var(--theme-glow) 28%,rgba(255,255,255,.09)),rgba(255,255,255,.025));border:1px solid color-mix(in srgb,var(--theme-glow) 42%,transparent);color:var(--theme-glow)}
+.top-link.enabled,.install-link{border-color:color-mix(in srgb,var(--theme-glow) 50%,rgba(255,255,255,.14))!important;background:linear-gradient(135deg,color-mix(in srgb,var(--theme-glow) 23%,rgba(255,255,255,.04)),rgba(255,255,255,.025))!important;color:var(--theme-ink)!important}
+.toggle-state,.top-link.enabled .toggle-state,#webToggle.enabled .toggle-state{background:color-mix(in srgb,var(--theme-glow) 18%,transparent);color:var(--theme-glow)}
+.settings-secondary,.settings-footer button,.settings-primary{border-color:color-mix(in srgb,var(--theme-glow) 42%,rgba(255,255,255,.16))}
+.settings-primary,.settings-footer button{background:linear-gradient(145deg,#fff,color-mix(in srgb,var(--theme-glow) 86%,white) 42%,var(--emerald))!important}
+.brand-icon{filter:drop-shadow(0 4px 15px color-mix(in srgb,var(--theme-glow) 38%,transparent))}
+.status-chip{background:color-mix(in srgb,var(--theme-glow) 15%,rgba(255,255,255,.035));border-color:color-mix(in srgb,var(--theme-glow) 35%,transparent);color:var(--theme-ink)}
