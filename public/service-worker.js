@@ -1,5 +1,5 @@
-const CACHE="freeai-shell-v11";
-const CORE=["/","/index.html","/service-worker.js","/manifest.webmanifest"];
+const CACHE="freeai-shell-v12";
+const CORE=["/","/index.html","/service-worker.js","/manifest.webmanifest","/manifest-red.webmanifest","/manifest-green.webmanifest","/manifest-blue.webmanifest","/manifest-yellow.webmanifest"];
 
 self.addEventListener("install", event => {
   event.waitUntil(

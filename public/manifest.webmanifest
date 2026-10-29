@@ -22,39 +22,39 @@
   ],
   "icons": [
     {
-      "src": "/android-icon-green-72.png",
+      "src": "/android-icon-green-72.svg",
       "sizes": "72x72",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "/android-icon-green-96.png",
+      "src": "/android-icon-green-96.svg",
       "sizes": "96x96",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "/android-icon-green-144.png",
+      "src": "/android-icon-green-144.svg",
       "sizes": "144x144",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "/android-icon-green-192.png",
+      "src": "/android-icon-green-192.svg",
       "sizes": "192x192",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "/android-icon-green-384.png",
+      "src": "/android-icon-green-384.svg",
       "sizes": "384x384",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "/android-icon-green-512.png",
+      "src": "/android-icon-green-512.svg",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
     }
   ],
@@ -65,9 +65,9 @@
       "url": "/?new=1",
       "icons": [
         {
-          "src": "/android-icon-green-192.png",
+          "src": "/android-icon-green-192.svg",
           "sizes": "192x192",
-          "type": "image/png"
+          "type": "image/svg+xml"
         }
       ]
     }
