@@ -261,7 +261,7 @@ body[data-theme="yellow"]{--theme-glow:#ffdf00;--theme-ink:#ffec86}
 .glass-select-option{display:flex;align-items:center;gap:10px;width:100%;padding:10px;border:1px solid transparent;border-radius:10px;background:transparent;color:#eaf2fb;font-size:12px;text-align:left}
 .glass-select-option:hover,.glass-select-option.selected{border-color:color-mix(in srgb,var(--theme-glow) 45%,transparent);background:linear-gradient(110deg,color-mix(in srgb,var(--theme-glow) 23%,rgba(255,255,255,.05)),rgba(255,255,255,.025))}
 .theme-swatch{width:13px;height:13px;border-radius:50%;border:1px solid rgba(255,255,255,.7);box-shadow:0 0 14px currentColor;flex:none}
-.swatch-red{background:#ff2855;color:#ff2855}.swatch-green{background:var(--emerald);color:var(--emerald)}.swatch-blue{background:#20a4ff;color:#20a4ff}.swatch-yellow{background:#ffd400;color:#ffd400}
+.swatch-red{background:#ff2855;color:#ff2855}.swatch-green{background:#00f5a0;color:#00f5a0}.swatch-blue{background:#20a4ff;color:#20a4ff}.swatch-yellow{background:#ffd400;color:#ffd400}
 .dropdown-check{margin-left:auto;color:var(--theme-glow)}
 .glass-select-trigger:focus-visible,.glass-select-option:focus-visible{outline:2px solid var(--theme-glow);outline-offset:3px}
 .setting-control input[type=range]{accent-color:var(--theme-glow)}
