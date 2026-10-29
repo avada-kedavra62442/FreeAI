@@ -20,7 +20,6 @@ async function render(theme, sourceName, outputName, size) {
 }
 
 for (const theme of themes) {
-  await render(theme, "favicon.svg", "favicon.png", 64);
   for (const size of appleSizes) {
     await render(theme, `apple-touch-icon-${size}.svg`, `apple-touch-icon-${size}.png`, size);
   }
