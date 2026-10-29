@@ -1,7 +1,7 @@
 # FreeAI theme assets
 
-FreeAI has four vivid, dark-only Liquid Glass palettes: Red (Gryffindor), Green (Slytherin), Blue (Ravenclaw), and Yellow (Hufflepuff).
+All theme SVG sources are directly in `public/`: six Apple touch icons, six Android icons, and one main favicon per Red, Green, Blue, and Yellow theme. The build script generates the 48 PNG versions directly in `public/`. Each palette has its own `.webmanifest`.
 
-Each theme has six Apple touch icon SVG sources, six Android/PWA icon SVG sources, and one SVG favicon under `public/icons/<theme>/`. The `predev` and `prebuild` lifecycle scripts use the open-source `sharp` package to generate matching, correctly sized PNG Apple touch icons and Android/PWA icons in the same public folders. Theme-specific install manifests live under `public/manifests/` and point to those generated PNGs.
+`window.FREEAI_THEME` is the selected theme, `window.FREEAI_THEME_CONFIG` is its palette, and `freeai:themechange` is available for integrations such as CookieYes. Theme selection updates browser favicon, visible app marks, Apple icon links, theme-color metadata, and the linked manifest. Websites cannot force already-installed iOS/Android launcher icons to change instantly; the OS can cache them, and iOS has no web API for dynamic icon replacement.
 
-Theme selection updates browser-visible favicons, Apple icon links, visible app marks, theme-color metadata, and the linked manifest. An already-installed launcher may cache its icon and can require a refresh or reinstall to reflect a new theme.
+Sitemap URLs and the canonical host will be finalized during SEO work.
