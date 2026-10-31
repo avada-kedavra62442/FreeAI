@@ -296,3 +296,6 @@ body[data-theme="yellow"]{--theme-glow:#ffdf00;--theme-ink:#ffec86}
 .auth-google-button:hover{background:#fff;border-color:#d2d5d9}
 .auth-discord-button{background:rgba(88,101,242,.09);border-color:rgba(88,101,242,.36)}
 .auth-discord-button:hover{background:rgba(88,101,242,.16);border-color:#5865F2}
+
+/* Playful opt-in Roast Mode control */
+.roast-toggle.enabled{color:#ff9b70!important;text-shadow:0 0 18px #ff784044}.roast-toggle.enabled .toggle-state{background:#ff784022;color:#ffb18f}.roast-toggle svg{width:14px;height:14px;vertical-align:-3px;margin-right:4px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.top-actions{gap:clamp(7px,1.1vw,16px)}@media(max-width:760px){.top-actions{gap:7px}.top-link{font-size:10px;padding:6px 7px}.top-link svg{width:12px;height:12px}.top-link .toggle-state{font-size:9px;padding:1px 4px}}
